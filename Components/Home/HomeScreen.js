@@ -5,6 +5,9 @@ import { Button } from "native-base";
 var backgroundImage = require("../../assets/home-screen-background.jpg");
 // create a component
 class HomeScreen extends Component {
+  static navigationOptions = {
+    header: null
+  };
   render() {
     return (
       <View style={styles.homeScreen}>
