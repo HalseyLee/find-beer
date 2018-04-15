@@ -15,14 +15,17 @@ import SearchTabNavigator from "./Components/Search/SearchTabNavigator";
 //   }
 // }
 
-const App = StackNavigator({
-  HomeScreen: {
-    screen: HomeScreen
-  },
-  SearchTabNavigator: {
-    screen: SearchTabNavigator
-  }
-});
+const App = StackNavigator(
+    {
+        HomeScreen: {
+            screen: HomeScreen
+        },
+        SearchTabNavigator: {
+            screen: SearchTabNavigator
+        }
+    },
+    { initialRouteName: "SearchTabNavigator" }
+);
 
 // const styles = StyleSheet.create({
 //   container: {
